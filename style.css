@@ -1,0 +1,52 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 100px;
+}
+
+.pink-btn {
+    color: #FF42A5;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 80px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+
+}
+
+.list a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-bg {
+    background-color: rgba(11, 2, 35, 0.10);
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 15px;
+}
+
+.fa-youtube {
+    color: red;
+}
+
+.fa-twitter {
+    color: rgb(106, 106, 239);
+}
