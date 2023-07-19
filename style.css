@@ -50,3 +50,96 @@ nav {
 .fa-twitter {
     color: rgb(106, 106, 239);
 }
+
+.fa-circle-play {
+    color: red;
+}
+
+.fa-download {
+    color: #F948B2;
+}
+
+.fa-users {
+    color: rgb(87, 87, 255);
+}
+
+.text-bg {
+    font: bolder;
+    font-size: 3rem;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.header-list li {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.sign-btn {
+    border: 0;
+    background-color: #FF42A5;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 35px;
+    margin: 20px 5px;
+}
+
+.play-btn {
+    border: 0;
+    background-color: #4EC5F7;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 35px;
+    margin: 20px 5px;
+}
+
+.banner-title {
+    background-image: url(./images/Group\ 14.png);
+    padding: 30px;
+}
+
+/* breakpoint for mobile devices */
+@media screen and (max-width:576px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .list {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+}
+
+/* breakpoints for larger devices  */
+@media screen and (min-width:576px) and (max-width:992px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .banner img {
+        padding: 20px;
+    }
+}
