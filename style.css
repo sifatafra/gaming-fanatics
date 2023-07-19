@@ -1,5 +1,6 @@
 * {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
 }
 
 nav {
@@ -104,7 +105,6 @@ nav {
 }
 
 .banner-title {
-    background-image: url(./images/Group\ 14.png);
     padding: 30px;
 }
 
@@ -187,6 +187,99 @@ nav {
 }
 
 /*end of funny video section  */
+.download-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin: 80px 100px;
+}
+
+.title-text {
+    font-size: 2rem;
+    text-align: right;
+}
+
+.details {
+    text-align: right;
+    color: #534C64;
+}
+
+.download-img {
+    position: relative;
+    width: 450px;
+    height: 500px;
+}
+
+.second-img {
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    right: 600px;
+}
+
+/* child section  */
+.child-games {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 100px 0;
+    background-color: #F948B2;
+}
+
+.child-games img {
+    width: 100%;
+    margin-right: 70px;
+    padding: 30px;
+}
+
+.kids-zone {
+    color: white;
+    margin-left: 70px;
+}
+
+.instructions {
+    margin: 15px 0;
+}
+
+.developers {
+    display: flex;
+    margin: 20px 0;
+}
+
+.developers li {
+    list-style: none;
+}
+
+.positions {
+    margin-left: -40px;
+}
+
+.address {
+    text-align: right;
+}
+
+.career {
+    font-size: 2rem;
+    color: #5a33b7;
+}
+
+.white-btn {
+    background-color: white;
+    color: #FF42A5;
+    padding: 15px 40px;
+    border-radius: 25px;
+    text-align: center;
+    border: 0;
+}
+
+
+
+
+
+
+
 
 
 /* breakpoint for mobile devices */
@@ -213,6 +306,41 @@ nav {
 
     .cards {
         flex-direction: column;
+    }
+
+    .download-section {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .download-img {
+        position: absolute;
+        width: 100%;
+    }
+
+    .second-img {
+        position: relative;
+        width: 150px;
+        height: 200px;
+        left: 100px;
+        bottom: -290px;
+    }
+
+    .child-games {
+        flex-direction: column;
+        padding: 20px;
+        margin-top: 400px;
+    }
+
+    .developers {
+        flex-direction: column;
+    }
+
+    .address {
+        flex-direction: column;
+        text-align: center;
+        margin-right: 200px;
+        margin-top: 30px;
     }
 }
 
@@ -244,5 +372,41 @@ nav {
     .cards {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .download-section {
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .download-img {
+        position: absolute;
+
+    }
+
+    .second-img {
+        position: relative;
+        width: 150px;
+        height: 200px;
+        left: 100px;
+        bottom: -290px;
+    }
+
+    .child-games {
+        flex-direction: column;
+        padding: 20px;
+        margin-top: 400px;
+    }
+
+    .developers {
+        flex-direction: column;
+    }
+
+    .address {
+        flex-direction: column;
+        text-align: center;
+        margin-right: 200px;
+        margin-top: 30px;
     }
 }
