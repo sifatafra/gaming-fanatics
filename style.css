@@ -82,6 +82,7 @@ nav {
 }
 
 .header-list li {
+    margin-top: 15px;
     list-style: none;
     margin-bottom: 15px;
 }
@@ -179,11 +180,17 @@ nav {
 
 .watch-now {
     font: bold;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+
 }
 
-.fa-circle-play {
-    color: red;
-    font-size: 2rem;
+.fa-circle-play,
+red {
+    font-size: 1.5rem;
+    color: rgb(245, 5, 5);
+
 }
 
 /*end of funny video section  */
@@ -274,12 +281,108 @@ nav {
     border: 0;
 }
 
+/* small icons  */
+.first-line {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.second-line {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.icons:hover {
+    border: 2px solid rgb(192, 72, 124);
+    color: #FF42A5;
+    padding: 10px;
+    border-radius: 40px;
 
 
+}
 
+/* icons  section end  */
 
+footer {
+    background-color: black;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
 
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
 
+.footer-logo img {
+    width: 50px;
+    height: 40px;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 20px 0;
+}
+
+footer li {
+    list-style: none;
+
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+}
+
+.fa-instagram {
+    color: white;
+
+}
+
+.fa-facebook {
+    color: white;
+}
+
+.fa-apple {
+    color: white;
+}
+
+.fa-linkedin {
+    color: white;
+}
+
+.terms {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+    color: #534C64;
+}
+
+.copyright {
+    color: #534C64;
+}
 
 
 /* breakpoint for mobile devices */
@@ -341,6 +444,38 @@ nav {
         text-align: center;
         margin-right: 200px;
         margin-top: 30px;
+    }
+
+    .first-line {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .second-line {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .icons:hover {
+        border: 2px solid rgb(192, 72, 124);
+        color: #FF42A5;
+        padding: 10px;
+        border-radius: 40px;
+    }
+
+    .footer-list {
+        flex-wrap: wrap;
+    }
+
+    .terms {
+        flex-wrap: wrap;
     }
 }
 
@@ -408,5 +543,21 @@ nav {
         text-align: center;
         margin-right: 200px;
         margin-top: 30px;
+    }
+
+    .first-line {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .second-line {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
     }
 }
